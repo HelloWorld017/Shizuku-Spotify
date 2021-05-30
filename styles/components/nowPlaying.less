@@ -1,0 +1,51 @@
+.main-nowPlayingBar-container {
+	--spice-text: var(--shizuku-grey-700);
+	--spice-subtext: var(--shizuku-grey-700);
+	--spice-button-disabled: var(--shizuku-theme-400);
+	--spice-player: var(--shizuku-theme-500);
+	
+	padding: 0 20px;
+	
+	.main-playPauseButton-button {
+		color: var(--shizuku-theme-400);
+		border-radius: 5px;
+	}
+	
+	.main-shuffleButton, .main-repeatButton {
+		&-button {
+			--spice-button: var(--shizuku-theme-600);
+			--spice-button-active: var(--shizuku-theme-700);
+			color: var(--spice-button);
+			transition: color .4s ease;
+			
+			&:not([disabled]) {
+				&:hover, &:focus {
+					color: var(--spice-button-active);
+				}
+			}
+		}
+		
+		&-on {
+			--spice-button: var(--shizuku-grey-700);
+			--spice-button-active: var(--shizuku-grey-800);
+		}
+	}
+	
+	.cover-art {
+		background: transparent;
+		box-shadow: none;
+		
+		.main-image-image {
+			border-radius: 50%;
+		}
+	}
+	
+	.ExtraControls {
+		.control-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 3px;
+		}
+	}
+}

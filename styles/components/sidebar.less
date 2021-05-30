@@ -1,0 +1,59 @@
+.Root__nav-bar {
+	background: var(--shizuku-grey-800);
+	
+	&::before {
+		content: "\F04C7 \F0140";
+		margin: 0 10px;
+		margin-top: 10px;
+		margin-bottom: -30px;
+		padding: 10px 10px;
+		font-family: 'Material Design Icons', sans-serif;
+		font-size: 2rem;
+		line-height: 2rem;
+		color: #fff;
+		background: var(--shizuku-theme-500);
+		border-radius: 5px;
+	}
+	
+	.main-rootlist-rootlist {
+		--left-sidebar-item-height: 36px;
+		
+		&Divider {
+			margin: 10px 0;
+			height: 5px;
+			background: var(--shizuku-grey-700);
+			
+			&Gradient {
+				display: none;
+			}
+		}
+		
+		&ItemLink{
+			padding: 0 10px;
+			margin: 0 -10px;
+			border-radius: 5px;
+			transition: background .4s ease, color .4s ease;
+			
+			&:hover {
+				background: var(--shizuku-theme-900);
+			}
+			
+			&Active {
+				color: var(--shizuku-theme-300);
+				background: var(--shizuku-theme-800);
+				
+				& > * {
+					font-weight: 700;
+				}
+				
+				&:hover {
+					& > * {
+						color: var(--shizuku-theme-200);
+					}
+					
+					background: var(--shizuku-theme-700);
+				}
+			}
+		}
+	}
+}

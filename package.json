@@ -1,0 +1,33 @@
+{
+  "name": "shizuku",
+  "version": "1.0.0",
+  "description": "A neat spicetify theme",
+  "main": "user.css",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production postcss styles/index.less -o user.css",
+    "watch": "cross-env NODE_ENV=production postcss styles/index.less -o user.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloWorld017/spicetify-shizuku.git"
+  },
+  "keywords": [
+    "spicetify",
+    "theme"
+  ],
+  "author": "Khinenw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HelloWorld017/spicetify-shizuku/issues"
+  },
+  "homepage": "https://github.com/HelloWorld017/spicetify-shizuku#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.4",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5"
+  }
+}
