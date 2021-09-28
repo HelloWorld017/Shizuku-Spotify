@@ -11,7 +11,7 @@
 		border-radius: 5px;
 	}
 	
-	.main-shuffleButton, .main-repeatButton {
+	.main-shuffleButton, .main-repeatButton, .control-button-heart {
 		&-button {
 			--spice-button: var(--shizuku-theme-600);
 			--spice-button-active: var(--shizuku-theme-700);
@@ -23,11 +23,11 @@
 					color: var(--spice-button-active);
 				}
 			}
-		}
-		
-		&-on {
-			--spice-button: var(--shizuku-grey-700);
-			--spice-button-active: var(--shizuku-grey-800);
+			
+			&[aria-checked="true"] {
+				--spice-button: var(--shizuku-grey-700);
+				--spice-button-active: var(--shizuku-grey-800);
+			}
 		}
 	}
 	

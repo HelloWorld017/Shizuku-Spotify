@@ -13,3 +13,57 @@
 	border-radius: 10px;
 	--spice-rgb-shadow: 200, 200, 200;
 }
+
+.main-entityHeader-metaDataText, .main-duration-container {
+	color: var(--shizuku-grey-400);
+}
+
+.ShizukuActionBarTextButton() {
+	color: var(--shizuku-grey-400);
+	transition: color .4s ease;
+	
+	&:hover {
+		color: var(--shizuku-theme-600);
+	}
+}
+
+.main-actionBar-ActionBarRow {
+	.main-moreButton-button, .x-downloadButton-button {
+		color: var(--shizuku-grey-400);
+		transition: color .4s ease;
+		
+		&:hover {
+			color: var(--shizuku-theme-600);
+		}
+	}
+}
+
+.x-filterBox-expandButton {
+	color: var(--shizuku-grey-400);
+	transition: color .4s ease;
+	
+	&:hover {
+		color: var(--shizuku-theme-600);
+	}
+}
+
+.x-filterBox-searchIconContainer {
+	color: var(--shizuku-theme-600);
+}
+
+.x-filterBox-filterInput {
+	color: var(--shizuku-grey-200);
+	background: var(--shizuku-grey-700);
+	
+	&::selection {
+		background: var(--shizuku-theme-800);
+	}
+}
+
+.x-sortBox-sortDropdown {
+	color: var(--shizuku-grey-400);
+}
+
+.main-trackList-placeholder {
+	filter: brightness(6);
+}
