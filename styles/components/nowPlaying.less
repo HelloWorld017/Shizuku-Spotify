@@ -41,11 +41,47 @@
 	}
 	
 	.ExtraControls {
-		.control-button {
+		.control-button, .control-button-wrapper > button {
+			--spice-button: var(--shizuku-theme-600);
+			--spice-button-active: var(--shizuku-theme-700);
+			color: var(--spice-button);
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			margin: 0 3px;
+			
+			&:hover {
+				color: var(--spice-button-active);
+			}
+		}
+		
+		.control-button--active, .control-button-wrapper > .control-button--active {
+			--spice-button: var(--shizuku-grey-700);
+			--spice-button-active: var(--shizuku-grey-800);
+			color: var(--spice-button);
+			
+			&:hover {
+				color: var(--spice-button-active);
+			}
+		}
+		
+		.volume-bar button {
+			--spice-button: var(--shizuku-grey-700);
+			--spice-button-active: var(--shizuku-grey-800);
+			
+			color: var(--shizuku-grey-700);
+		}
+	}
+}
+
+.connect-device-list-container {
+	background: var(--shizuku-grey-200);
+	
+	.connect-device-list-item {
+		background: var(--shizuku-grey-200);
+		
+		&:hover {
+			background: var(--shizuku-grey-300);
 		}
 	}
 }

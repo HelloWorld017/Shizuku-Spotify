@@ -60,6 +60,17 @@
 	.home-active-icon, .search-active-icon, .collection-active-icon {
 		color: var(--shizuku-theme-400);
 	}
+	
+	.main-navBar-navBar {
+		--left-sidebar-padding-left: 24px;
+		--left-sidebar-padding-right: 24px;
+		
+		[data-id="/collection"] + * {
+			border-top: 4px solid #f0f0f0;
+			padding-top: 10px;
+			margin-top: 10px;
+		}
+	}
 }
 
 .main-createPlaylistButton-createPlaylistIcon, .main-likedSongsButton-likedSongsIcon {
